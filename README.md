@@ -1,2 +1,2 @@
-# os-lab
-Codes for os lab
+# networking-lab
+Codes for networking lab
