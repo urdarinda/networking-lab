@@ -1,0 +1,32 @@
+1)
+Packet 8 is Dns Query and packet 9 is response message
+They both are sent over udp
+
+2)
+Destination port is 53
+Source port is 53
+
+3)
+DNS query is sent to 128.238.29.23
+DNS server is given by -- 
+
+cat /etc/resolv.conf
+nameserver 172.31.100.8
+
+No the ip address is not same because the file was captured on a different network
+
+4)
+Type A , Class IN
+0 answers
+
+5)
+2 answers
+Each answer contains:
+name, type, class ,ttl , data length and Address
+
+6)
+Yes
+132.151.6.75
+
+7)
+No because the host has cached the ip address for the destination

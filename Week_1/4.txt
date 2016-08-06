@@ -1,0 +1,30 @@
+17)
+DNS query is sent to 18.72.0.3
+local DNS server is given by -- 
+
+cat /etc/resolv.conf
+nameserver 172.31.100.8
+
+No the ip address is not same because the file was captured on a different network
+
+18)
+query 1- Type PTR , Class IN
+query 2- Type A , Class IN
+query 3- Type A , Class IN
+0 answers for all queries
+
+19)
+
+query 1-
+1 answer
+3.0.72.18.in-addr.arpa: type PTR, class IN, BITSY.MIT.EDU
+
+query 2-
+0 answers
+
+query 3-
+1 answer
+www.aiit.or.kr: type A, class IN, addr 218.36.94.200
+
+20)
+Provided with this zip file
