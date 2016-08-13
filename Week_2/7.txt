@@ -1,0 +1,11 @@
+3)
+SeqNo 0 is used to initiate a TCP connection. A SYN flag which is set (1) identifies it as a SYN segment.
+
+4)
+SeqNo 0 is also used in reply to the client. Acknowledgement field is set to 1; Both SYN and ACK flags are set which identifies it as SYN ACK segment.
+The value of the acknowledgement field in the SYNACK segment is determined by adding 1 to the initial sequence number of SYN segment from the client computer 
+
+5)
+164041 is the seqNo for HTTP POST command.
+
+6)
