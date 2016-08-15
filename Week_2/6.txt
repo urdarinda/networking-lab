@@ -1,7 +1,0 @@
-1)
-Source ip -192.168.1.102
-Source port - 1161
-
-2)
-Ip address of gaia server -- 128.119.245.12
-It is sending and recieving through port 80 which is a standard for HTTP

@@ -1,8 +1,0 @@
-18)
-Status code -401
-Response - Authorization Required
-
-19)
-The Authorization field is included the second time with some username and password
-Basic ZXRoLXN0dWRlbnRzOm5ldHdvcmtz // I think this is base64 encoding.!!
-eth-students:networks

@@ -1,9 +1,0 @@
-16)
-3 GET requests were sent to the following ips
-128.119.245.12
-165.193.123.218
-134.241.6.82
-
-17)
-The images were downloaded in parallel because there are consecutive GET requests after which the images are downloaded. If the download was serial, it would have been GET-OK-GET-OK version
-
