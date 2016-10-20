@@ -1,0 +1,60 @@
+1)
+Src: 192.168.1.102
+
+2)
+The protocol is 1 which refers to ICMP
+
+3)
+IP header has 20 bytes
+Total length is 84 bytes.
+Since ip header has 20 bytes, payload= 84-20 = 64 bytes
+
+4)
+The data is not fragmented since more fragment bit=0
+
+5)
+Time to live, Identification and checksum always change
+
+6)
+The fields that stay constant across the IP datagrams are:
+• Version (since we are using IPv4 for all packets)
+• header length (since these are ICMP packets)
+• source IP (since we are sending from the same source)
+• destination IP (since we are sending to the same dest)
+• Differentiated Services (since all packets are ICMP they use the same Type of Service class)
+• Upper Layer Protocol (since these are ICMP packets)
+The fields that must stay constant are:
+• Version (since we are using IPv4 for all packets)
+• header length (since these are ICMP packets)
+• source IP (since we are sending from the same source)
+• destination IP (since we are sending to the same dest)
+• Differentiated Services (since all packets are ICMP they use the same Type of Service class)
+• Upper Layer Protocol (since these are ICMP packets)
+The fields that must change are:
+• Identification(IP packets must have different ids)
+• Time to live (traceroute increments each subsequent packet)
+• Header checksum (since header changes, so must checksum) 
+
+7)
+The identification field increases by 1 every time
+
+8)
+Identification field:0x00009d7c (40316)
+TTL : 255
+
+9)
+No because fragment bit is 0
+
+10)
+No
+
+
+11)
+
+The second fragment is obvious because it now has a a fragment offset of 1480.
+
+There are no more fragments because it no longer has a flag set for more fragments.
+
+12)
+
+Fragment offset, total length, more fragments bit, TTL and the checksum.

@@ -1,0 +1,111 @@
+1)
+
+48 bit Ethernet Address: 00:d0:59:a9:3d:68
+
+2)
+
+48-bit destination address in the Ethernet frame: 00:06:25:da:af:73
+
+3)
+
+Type: IP 0x0800
+
+4)
+
+After 432 bits or 54 bytes, the G in getting appears.
+
+5)
+
+The Source address is 00:06:25:da:af:73. This address is the address of
+
+my router/internet gateway address.
+
+6)
+
+The Destination address is 00:d0:59:a9:3d:68. This is the Ethernet
+
+address of my computer.
+
+7)
+
+The two-byte frame type field is 0x0800. The bit that is valued to 1 says
+
+to not fragment the set.
+)
+8)
+
+The ASCII “O” appears 52 bytes from the start of the ethernet frame.
+
+Again, there are 14 bytes of Ethernet frame, and then 20 bytes of IP
+
+header followed by 20 bytes of TCP header before the HTTP data is
+
+encountered.
+
+9)
+)
+The Internet Address column contains the IP address, the Physical
+
+Address column contains the MAC address, and the type indicates the
+
+protocol type.
+
+10)
+
+The hex value for the source address is 00:d0:59:a9:3d:68. The hex
+
+value for the destination address is ff:ff:ff:ff:ff:ff, the broadcast address.
+
+11)
+
+The hex value for the Ethernet Fram type field is 0x0806, for ARP.
+
+12)
+
+a) The ARP opcode field begins 20 bytes from the very beginning of the
+
+Ethernet frame.
+
+b) The hex value for opcode field withing the ARP-payload of the request
+
+is 0x0001, for the request.
+
+c) Yes, the ARP message contains the IP address 192.168.1.105 for the
+
+sender.
+
+d) The field “Target MAC address” is set to 00:00:00:00:00:00 to
+
+question the machine whose corresponding IP address (192.168.1.1) is
+
+being queried.
+
+13)
+
+a) The ARP opcode field begins 20 bytes from the very beginning of the
+
+Ethernet frame.
+
+b)The hex value for opcode field withing the ARP-payload of the request
+
+is 0x0002, for the reply.
+
+c) The answer to the earlier ARP request appears in the”Sender MAC
+
+address” field, which contains the Ethernet address 00:06:25:da:af:73 for
+
+the sender with IP address 192.168.1.1.
+
+Abswer-14
+
+The hex value for the source address is 00:06:25:da:af:73 and for the
+
+destination is 00:d0:59:a9:3d:68.
+
+15)
+
+There is no reply in this trace because we are not at the machine that
+
+sent the request. The ARP request is broadcast, but the ARP reply is sent
+
+back directly to the sender’s Ethernet address.

@@ -1,0 +1,55 @@
+3)
+SeqNo 0 is used to initiate a TCP connection. A SYN flag which is set (1) identifies it as a SYN segment.
+
+4)
+SeqNo 0 is also used in reply to the client. Acknowledgement field is set to 1; Both SYN and ACK flags are set which identifies it as SYN ACK segment.
+The value of the acknowledgement field in the SYNACK segment is determined by adding 1 to the initial sequence number of SYN segment from the client computer 
+
+5)
+164041 is the seqNo for HTTP POST command.
+
+6)
+The HTTP POST segment is considered as the first segment. Segments 1 – 6 are No. 4, 5, 7, 8, 10, 
+        and 11 in this trace respectively. The ACKs of segments 1 – 6 are No. 6, 9, 12, 14, 15, and 16
+        in this trace.
+        Segment 1 sequence number: 1 
+        Segment 2 sequence number: 566
+        Segment 3 sequence number: 2026
+        Segment 4 sequence number: 3486
+        Segment 5 sequence number: 4946 
+        Segment 6 sequence number: 6406
+		
+Below is the list of SENT time - RECEIVED time - RTT :
+Seg 1 - 0.026477 - 0.053937 - 0.02746
+Seg 2 - 0.041737 - 0.077294 - 0.035557
+Seg 3 - 0.054026 - 0.124085 - 0.070059
+Seg 4 - 0.054690 - 0.169118 - 0.11443
+Seg 5 - 0.077405 - 0.217299 - 0.13989
+Seg 6 - 0.078157 - 0.267802 - 0.18964
+
+EstimatedRTT = 0.875 * EstimatedRTT + 0.125 * SampleRTT
+
+
+7)
+The length of the first TCP segment is 565 bytes. The length of each of the following five TCP segments is 1460 bytes.
+
+8)
+The minimum amount of buffer space advertised at the received for the entire trace - 5840.
+No.
+
+9)
+No, there isn't any retransmitted segments in the trace file. I checked the sequence graph to answer this question.
+
+10)
+Data typically acknowledged by the receiver in an ACK - 1460.
+The cases in 78 & 79 show where the reciever is acking every other segment ie 1460*2=2920 bytes.
+
+11)
+Time of First segment= 0.026477
+Time of Last segment= 5.455830
+ SeqNo of first segment=1
+SeqNo of last segment=164091 
+
+Total data transfered = 164091-1 = 164090
+Total time taken= 5.455830 - 0.026477 =5.4294 seconds.
+Hence total speed= 164090/5.4294=30.222 KB/sec

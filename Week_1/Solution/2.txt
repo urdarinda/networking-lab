@@ -1,0 +1,40 @@
+8)
+Destination port is 53
+Source port is 53
+for all 3 queries and responses
+
+9)
+DNS query is sent to 128.238.29.22
+DNS server is given by -- 
+
+cat /etc/resolv.conf
+nameserver 172.31.100.8
+
+No the ip address is not same because the file was captured on a different network
+
+10)
+query 1- Type PTR , Class IN
+query 2- Type A , Class IN
+query 3- Type A , Class IN
+0 answers for all queries
+
+11)
+
+query 1-
+1 answer
+answer contains:
+name, type, class ,ttl , data length and Domain Name
+22.29.238.128.in-addr.arpa: type PTR, class IN, dns-prime.poly.edu
+
+query 2-
+0 answers, no host was found
+
+query 3-
+1 answer
+answer contains:
+name, type, class ,ttl , data length and Address
+www.mit.edu: type A, class IN, addr 18.7.22.83
+
+
+12)
+Provided with this zip file

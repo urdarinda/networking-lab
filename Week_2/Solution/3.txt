@@ -1,0 +1,12 @@
+12)
+Only one.
+Packet 8 contains GET request for Bill of Rights which has a response in packet 14
+
+13)
+Packet 14 contains 200-OK response for the GET message;
+
+14)
+Packet 14 contains 200-OK response for the GET message;
+
+15)
+4 data segments were needed out of which 3 were TCP segments;

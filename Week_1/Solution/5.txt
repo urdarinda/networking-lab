@@ -1,0 +1,27 @@
+1)
+There are no udp packets but there is a dns packet which uses udp
+4 fields in udp header
+source port
+Destination port
+Length
+Checksum
+
+2)
+Each field has 2 bytes
+
+3)
+It is the length of bytes of the UDP header and UDP data
+
+4)
+Maximum 65535 bytes ( including udp header, data and ip header)
+
+5)
+2^16-1 == 65535
+
+6)
+Protocol no is 17 (0x11)
+
+7)
+The port numbers are interchanged ie
+the source becomes the destination for the second packet
+the destination becomes the source for the second packet
