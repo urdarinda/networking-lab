@@ -133,7 +133,7 @@ int main(int argc,char *argv[]){
 	pthread_t tid;
 	struct targs *targ;
 	signal(SIGINT,sigp);
-	while(1);
+	//while(1);
 
 
 	struct sockaddr_in addrport;struct sockaddr_in caddr;
